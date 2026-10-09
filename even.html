@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or Odd Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .box {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 18px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #1a4f8b;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #clearBtn {
+            background-color: #888888;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #1a4f8b;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Even or Odd Checker</h1>
+
+        <input type="number" id="numberInput" placeholder="Enter a number">
+        <br>
+
+        <button id="checkBtn" onclick="checkNumber()">Check Number</button>
+        <button id="clearBtn" onclick="clearResult()">Clear</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function checkNumber() {
+            var input = document.getElementById("numberInput").value;
+            var result = document.getElementById("result");
+
+            if (input === "") {
+                result.innerHTML = "Please enter a number.";
+                return;
+            }
+
+            var num = Number(input);
+
+            if (num % 2 === 0) {
+                result.innerHTML = num + " is Even";
+            } else {
+                result.innerHTML = num + " is Odd";
+            }
+        }
+
+        function clearResult() {
+            document.getElementById("result").innerHTML = "";
+            document.getElementById("numberInput").value = "";
+        }
+    </script>
+</body>
+</html>

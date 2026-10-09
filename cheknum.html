@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333333;
+            background-color: #eef2f7;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a4f8b;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #aaaaaa;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 12px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #1a4f8b;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #143d6b;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 20px;
+            color: #1a4f8b;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #cccccc;
+        }
+
+        th {
+            background-color: #1a4f8b;
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f4f7fb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="course">Course</label>
+            <input type="text" id="course" placeholder="Enter your course">
+
+            <button type="button">Register</button>
+        </form>
+
+        <h2>Registered Students</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>Riya Sharma</td>
+                <td>riya@example.com</td>
+                <td>Computer Science</td>
+            </tr>
+            <tr>
+                <td>Aman Das</td>
+                <td>aman@example.com</td>
+                <td>Mathematics</td>
+            </tr>
+            <tr>
+                <td>Sneha Roy</td>
+                <td>sneha@example.com</td>
+                <td>Physics</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
